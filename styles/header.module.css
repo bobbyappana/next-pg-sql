@@ -1,0 +1,23 @@
+.header {
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #000;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 11;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .logo {
+  height: 56px;
+  width: 90px;
+  justify-content: center;
+}
+
+.header .login a {
+  color: #fff;
+  padding: 20px;
+  cursor: pointer;
+}

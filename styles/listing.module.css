@@ -1,0 +1,78 @@
+.blog-section {
+  padding: 10px 0px;
+}
+
+.user-blog-border {
+  border-bottom: 1px solid #000;
+}
+
+.blog-border {
+  border-top: 1px solid #000;
+}
+
+.blog-container {
+  padding-top: 10px;
+  margin-bottom: 25px;
+}
+
+.description {
+  font-weight: 500;
+  text-align: left;
+  color: #676e72;
+  font-size: 20px;
+}
+
+.user-profile {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.user-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.log-out {
+  background-color: #000000de;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.add-blog {
+  background-color: #3e2667f7;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.update-blog {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 10px 0px;
+}
+
+.update-blog .delete {
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.blog-date {
+  font-size: 16px;
+  color: #cf2f2f;
+}
+.author {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  color: #802c2c;
+}
+
+@media screen and (max-width: 540px) {
+  .user-name {
+    width: 250px;
+  }
+}

@@ -5,7 +5,7 @@
 /node_modules
 
 # Ignore environment variables file
-.env*.local
+.env
 
 # Ignore development server logs
 npm-debug.log*

@@ -1,17 +1,10 @@
-import { Pool } from "pg";
-
-const pool = new Pool({
-  user: process.env.NEXT_PUBLIC_PG_USER,
-  host: process.env.NEXT_PUBLIC_PG_HOST,
-  database: process.env.NEXT_PUBLIC_PG_DATABASE,
-  password: process.env.NEXT_PUBLIC_PG_PASSWORD,
-  port: process.env.NEXT_PUBLIC_PORT,
-});
+import { db } from "@vercel/postgres";
 
 export default async function executeQuery(query, values = []) {
   // console.log("DB query", query, values);
   try {
-    const client = await pool.connect();
+    const client = await db.connect();
+
     try {
       const result = await client.query(query, values);
       // console.log("DB result", result);

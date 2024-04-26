@@ -20,7 +20,7 @@ export default function AddUpdateBlogWrapper({ blogDetails = {} }) {
   const [descriptionValidation, setDescriptionValidation] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState(false);
-console.log("formData.image_url", formData.image_url)
+
   useEffect(() => {
     if (typeof window != "undefined" && window != null) {
       const userData = localStorage.getItem("userData");
@@ -153,12 +153,7 @@ console.log("formData.image_url", formData.image_url)
           </div>
           <div className="col-md-5 mt-3">
             {formData.image_url != "" && (
-              <img
-                src={formData.image_url}
-                alt="blog-image"
-                height="350"
-                width="440"
-              />
+              <img src={formData.image_url} alt="blog-image" height="350" width="440" />
             )}
           </div>
         </div>

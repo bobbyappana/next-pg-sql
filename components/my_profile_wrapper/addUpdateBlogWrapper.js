@@ -20,7 +20,7 @@ export default function AddUpdateBlogWrapper({ blogDetails = {} }) {
   const [descriptionValidation, setDescriptionValidation] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState(false);
-
+console.log("formData.image_url", formData.image_url)
   useEffect(() => {
     if (typeof window != "undefined" && window != null) {
       const userData = localStorage.getItem("userData");

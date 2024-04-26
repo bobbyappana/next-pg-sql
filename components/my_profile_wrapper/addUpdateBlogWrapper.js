@@ -153,12 +153,11 @@ export default function AddUpdateBlogWrapper({ blogDetails = {} }) {
           </div>
           <div className="col-md-5 mt-3">
             {formData.image_url != "" && (
-              <Image
+              <img
                 src={formData.image_url}
                 alt="blog-image"
                 height="350"
                 width="440"
-                priority={true}
               />
             )}
           </div>

@@ -52,15 +52,8 @@ export default function AddUpdateBlogWrapper({ blogDetails = {} }) {
     const reader = new FileReader();
 
     reader.onload = async (event) => {
-      const payload = {
-        image: event.target.result,
-      };
-
-      const response = await apiPostCall(apiList.UPLOAD_IMAGE, payload);
-
-      if (response.status) {
-        updateFormData("image_url", response.imageUrl);
-      }
+      const image = event.target.result;
+      updateFormData("image_url", image);
     };
 
     reader.readAsDataURL(file);
@@ -160,7 +153,13 @@ export default function AddUpdateBlogWrapper({ blogDetails = {} }) {
           </div>
           <div className="col-md-5 mt-3">
             {formData.image_url != "" && (
-              <Image src={formData.image_url} alt="blog-image" height="350" width="440" priority={true}/>
+              <Image
+                src={formData.image_url}
+                alt="blog-image"
+                height="350"
+                width="440"
+                priority={true}
+              />
             )}
           </div>
         </div>

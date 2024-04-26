@@ -24,7 +24,7 @@ export default function LandingWrapper() {
         blogsList.map((item, i) => <BlogItem key={i} blogItem={item} index={i} />)
       ) : (
         <div className="page-not-found">
-          <h6>Sorry, No Blogs Found, Please log in to create your blogs.</h6>
+          <h6>Please wait loading...</h6>
         </div>
       )}
     </>

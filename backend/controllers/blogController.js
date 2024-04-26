@@ -20,7 +20,7 @@ export function addBlogController(payload) {
           response.message = "Blog added successfully";
           resolve(response);
         } else {
-          response.message = "Something went wrong";
+          response.message = "Something went wrong!";
           resolve(response);
         }
       })
@@ -46,7 +46,7 @@ export function getBlogsController() {
         } else {
           response.status = true;
           response.data = [];
-          response.message = "No blogs found";
+          response.message = "No blogs found!";
           resolve(response);
         }
       })
@@ -70,7 +70,7 @@ export function blogsDetailsController(blogId) {
           response.message = "Users blog details";
           resolve(response);
         } else {
-          response.message = "No blogs found";
+          response.message = "No blogs found!";
           resolve(response);
         }
       })
@@ -94,7 +94,7 @@ export function userBlogListController(userId) {
           response.message = "Users blog list";
           resolve(response);
         } else {
-          response.message = "No blogs found";
+          response.message = "No blogs found!";
           resolve(response);
         }
       })
@@ -117,7 +117,7 @@ export function updateBlogController(payload) {
           response.message = "Blog updated successfully";
           resolve(response);
         } else {
-          response.message = "Something went wrong";
+          response.message = "Something went wrong!";
           resolve(response);
         }
       })
@@ -140,7 +140,7 @@ export function deleteBlogController(blogId) {
           response.message = "Blog deleted successfully";
           resolve(response);
         } else {
-          response.message = "Something went wrong";
+          response.message = "Something went wrong!";
           resolve(response);
         }
       })

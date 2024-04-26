@@ -8,7 +8,7 @@ export const validateUserName = (userName) => {
 };
 
 export const validateTitle = (title) => {
-  const regex = /^[A-Za-z\s]{20,}$/;
+  const regex = /^.{20,}$/;
   return regex.test(title);
 };
 

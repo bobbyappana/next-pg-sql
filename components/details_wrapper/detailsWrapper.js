@@ -75,12 +75,11 @@ export default function DetailsWrapper({ blogDetails }) {
         </div>
         <div className="col-md-5">
           {typeof blogDetails.image_url != "" && (
-            <Image
+            <img
               src={blogDetails.image_url}
               alt="blog-image"
               height="350"
               width="440"
-              priority={true}
             />
           )}
           <div className={listingStyle["author"]}>

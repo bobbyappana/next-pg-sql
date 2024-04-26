@@ -26,12 +26,11 @@ export default function BlogItem({ blogItem, index }) {
         </div>
         <div className="col-md-5">
           {typeof blogItem.image_url != "" && (
-            <Image
+            <img
               src={blogItem.image_url}
               alt="blog-image"
               height="350"
               width="440"
-              priority={true}
             />
           )}
           <div className={listingStyle["author"]}>

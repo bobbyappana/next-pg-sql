@@ -22,7 +22,7 @@ export default function userLoginModel(payload) {
           } else {
             if (emailResp.rows[0].email == payload.email) {
               result.status = false;
-              result.message = "Please enter a valid email and user name";
+              result.message = "Please check your username";
               resolve(result);
             } else {
               result.status = false;

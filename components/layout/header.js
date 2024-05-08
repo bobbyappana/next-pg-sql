@@ -24,10 +24,10 @@ export default function Header() {
       <div className={stylesHeader["logo"]}>
         <Link href="/">
           <Image
-            src={"/images/iide_logo.png"}
+            src={"/images/blog_logo.png"}
             height="57"
             width="90"
-            alt="iide-logo"
+            alt="blog-logo"
             priority={true}
           />
         </Link>
